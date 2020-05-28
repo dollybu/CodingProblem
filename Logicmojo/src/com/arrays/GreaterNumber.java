@@ -6,10 +6,10 @@ import java.util.Arrays;
 public class GreaterNumber {
 
 	public static void main(String[] args) {
-		//int a[]= {2,1,8,7,6,5};
+		int a[]= {2,1,8,7,6,5};
 		//out - 251678
 		
-		int a[]= {5,3,4,9,7,6};
+		//int a[]= {5,3,4,9,7,6};
 		//out - 536479
 
 		int b[]=getGreaterNumber(a,a.length);
@@ -38,11 +38,15 @@ public class GreaterNumber {
 			}
 		}
 		
-	    int temp =a[i-1];
-	     a[i-1]=a[min];
-	     a[min]=temp;
-	     Arrays.sort(a,1,n);
+		swap(a,i-1,min);
+	    Arrays.sort(a,i,n);
 		
 		return a;
+	}
+
+	private static void swap(int[] a, int i, int min) {
+		int temp =a[i];
+	     a[i]=a[min];
+	     a[min]=temp;
 	}
 }
