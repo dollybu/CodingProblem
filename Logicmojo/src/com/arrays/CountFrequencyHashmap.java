@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-public class CountFrequency {
+public class CountFrequencyHashmap {
 
 	public static void main(String[] args) {
 		int arr[]= {1,2,2,5,7,1};
@@ -31,7 +31,7 @@ public class CountFrequency {
 		
 		for(Entry entry:map.entrySet())
 		{
-			System.out.println(entry.getKey()+"value: "+entry.getValue());
+			System.out.println(entry.getKey()+" value: "+entry.getValue());
 		}
 	}
 }
