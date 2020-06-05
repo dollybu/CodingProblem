@@ -48,7 +48,7 @@ public class Graph {
 		visited[index]=true;
 		int size1 =this.map.get(index).size();
 		System.out.println("Size>>"+size1);
-		for(int i=0;i<size1;i++)
+		for(int i=0;i<=size1;i++)
 		{
 			int val=this.map.get(index).get(i);
 			System.out.println("Value>>>"+val);
